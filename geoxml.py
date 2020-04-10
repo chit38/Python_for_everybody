@@ -31,7 +31,7 @@ while True:
 
     data = uh.read()
     print('Retrieved', len(data), 'characters')
-    print(data.decode())
+    #print(data.decode())
     tree = ET.fromstring(data)
 
     count = tree.findall('.//count')
